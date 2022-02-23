@@ -9,23 +9,23 @@ export const siteTitle = 'illamination'
 
 export default function Layout({ children, home }) {
     return (
-      <div className={styles.container}>
+      <div className="flex flex-col min-h-screen">
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
             content="A purposeless blog of my current obsessions."
           />
-          <meta
+          {/* <meta
             property="og:image"
             content={`https://og-image.vercel.app/${encodeURI(
               siteTitle
             )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
           />
           <meta name="og:title" content={siteTitle} />
-          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:card" content="summary_large_image" /> */}
         </Head>
-        <header className={styles.header}>
+        <header className='bg-100 mb-8 py-4'>
           {home ? (
             <>
               <Image
@@ -60,7 +60,7 @@ export default function Layout({ children, home }) {
             </>
           )}
         </header>
-        <main>{children}</main>
+        <main className='container mx-auto flex-1'>{children}</main>
         {!home && (
           <div className={styles.backToHome}>
             <Link href="/">
@@ -68,6 +68,12 @@ export default function Layout({ children, home }) {
             </Link>
           </div>
         )}
+            <footer className='bg-100 mt-8 py-4'>
+        <div className='container mx-auto flex justify-center'>
+          &copy; 2022 Andrea Rumbaua
+        </div>
+      </footer>
       </div>
+      
     )
   }
