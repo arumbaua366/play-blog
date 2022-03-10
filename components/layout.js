@@ -4,7 +4,7 @@ import logo from "../public/images/ar-logos_black.png";
 import Image from "next/image";
 
 const name = "A purposeless blog of various topics.";
-export const mylogo = "../public/images/ar-logos_black.png";
+// export const mylogo = "../public/images/ar-logos_black.png";
 
 export default function Layout({ children }) {
   return (
