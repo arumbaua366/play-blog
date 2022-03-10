@@ -1,24 +1,25 @@
-import Layout from '../../components/layout'
-import { getAllPostIds, getPostData } from '../../lib/posts'
-import Head from 'next/head'
-import Date from '../../components/date'
-import utilStyles from '../../styles/utils.module.css'
+import { getAllPostIds, getPostData } from "../../lib/posts"
+import Head from "next/head"
+import Date from "../../components/date"
+import Image from "next/image"
+
+
 
 export default function Post({ postData }) {
     return (
-      <Layout>
+      <div>
         <Head>
           <title>{postData.title}</title>
         </Head>
         <article>
-          <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-          <div className={utilStyles.lightText}>
-          <img src={blog_image}></img>
+          <h1 className="">{postData.title}</h1>
+          <div className="">
+          <Image src={postData.blogImage} />
             <Date dateString={postData.date} />
           </div>
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </article>
-      </Layout>
+      </div>
     )
   }
 

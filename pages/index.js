@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
+import { siteTitle } from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
+import Image from "next/image";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -16,24 +16,24 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   return (
-    <Layout home>
+    <div>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-0'>
-        {allPostsData.map(({ id, date, blog_image, title }) => (
-          <div key={id} className='border border-gray-200 m-2 rounded-xl shadow-lg overflow-hidden flex flex-col'>
+      <div className='flex flex-wrap md:flex-wrap'>
+        {allPostsData.map(({ id, date, blogImage, title }) => (
+          <div key={id} className='p-6 '>
             <Link href={`/posts/${id}`}>
               <a>{title}</a>
             </Link>
             <br />
-            <img src={blog_image}></img>
-            <small className={utilStyles.lightText}>
+            <Image src={blogImage} height={250} width={335} />  
+            <br />
               <Date dateString={date} />
-            </small>
+
           </div>
         ))}
       </div>
-    </Layout>
+    </div>
   );
 }

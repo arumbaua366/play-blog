@@ -1,6 +1,6 @@
 ---
-title: 'When to Use Static Generation v.s. Server-side Rendering'
-date: '2020-01-02'
+title: 'What About This Post Too?'
+date: '2022-02-02'
 blogImage: '/images/jsimage.png'
 ---
 
