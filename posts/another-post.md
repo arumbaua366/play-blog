@@ -1,7 +1,7 @@
 ---
 title: 'Another Post'
 date: '2022-03-09'
-blogImage: '/images/jsimage.png'
+blogImage: '/images/placeholder1.jpg'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus mattis molestie a iaculis at. Morbi tristique senectus et netus et malesuada fames. Consequat id porta nibh venenatis cras sed felis eget velit. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. Viverra tellus in hac habitasse platea. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Consectetur lorem donec massa sapien faucibus et molestie. Amet mattis vulputate enim nulla. Ipsum a arcu cursus vitae congue. Purus in massa tempor nec. Nisi porta lorem mollis aliquam ut porttitor. Sed lectus vestibulum mattis ullamcorper. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Tristique senectus et netus et malesuada fames ac turpis. Metus dictum at tempor commodo ullamcorper a lacus.

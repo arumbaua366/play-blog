@@ -27,7 +27,7 @@ export default function Home({ allPostsData }) {
               <a>{title}</a>
             </Link>
             <br />
-            <Image src={blogImage} height={250} width={335} />  
+            <Image src={blogImage} height={300} width={400} />  
             <br />
               <Date dateString={date} />
 
